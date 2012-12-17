@@ -381,21 +381,24 @@ public class PlotManager {
 		{
 			sign.setLine(0, "ID:" + id);
 		}
-		if(("Owner:" + plot.owner).length() > 15)
-		{
-			sign.setLine(2, ("Owner:" + plot.owner).substring(0, 15));
-			if(("Owner: " + plot.owner).length() > 30)
-			{
-				sign.setLine(3, ("Owner:" + plot.owner).substring(15, 30));
-			}
-			else
-			{
-				sign.setLine(3, ("Owner:" + plot.owner).substring(15));
-			}
-		}else{
-			sign.setLine(2, "Owner:" + plot.owner);
-			sign.setLine(3, "");
-		}
+                
+                sign.setLine(2,"Owner:");
+                sign.setLine(3, plot.owner);
+//		if(("Owner:" + plot.owner).length() > 15)
+//		{
+//			sign.setLine(2, ("Owner:" + plot.owner).substring(0, 15));
+//			if(("Owner: " + plot.owner).length() > 30)
+//			{
+//				sign.setLine(3, ("Owner:" + plot.owner).substring(15, 30));
+//			}
+//			else
+//			{
+//				sign.setLine(3, ("Owner:" + plot.owner).substring(15));
+//			}
+//		}else{
+//			sign.setLine(2, "Owner:" + plot.owner);
+//			sign.setLine(3, "");
+//		}
 		sign.update(true);
 	}
 	
